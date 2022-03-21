@@ -20,21 +20,21 @@ Azure VMs, 1 vcpu, 500 MB RAM
 #### Théorie
 
 * Intrduction
-    * Motivation
-        * Portability
-        * Reproductibility
-        * Security (sandboxing)
-        * Automation
-        * Flexibility
-    * Historic
-        * Virtualization
-        * Hypervisor methods
-        * Container vs Hypervisor
-    * Concepts
-        * Docker image
-        * Docker registry
-        * Docker container
-        * service (if swarm mode)
+  * Motivation
+  * Portability
+  * Reproductibility
+  * Security (sandboxing)
+  * Automation
+  * Flexibility
+* Virtualization vs containarization
+* Historic
+  * LXC
+  * jails
+* Docker echosystem
+  * Docker CE vs Docker EE
+  * Docker daemon
+  * Docker CLI
+* Install docker
 
 #### Pratique
 
@@ -42,15 +42,13 @@ Azure VMs, 1 vcpu, 500 MB RAM
 
 #### Théorie
 
-* Docker architecture
-    * docker flavors
-        * Enterprise Edition : 1 day support included
-        * Community Edition : free version
-    * docker daemon
-    * docker CLI
-        * ps
-        * images
-        * run
+* Containers
+  * Life-cycle
+  * Backgroud
+  * Restarting and attaching
+  * Naming and inspecting
+  * Labels
+  * Getting inside
 
 #### Pratique
 
@@ -58,13 +56,11 @@ Azure VMs, 1 vcpu, 500 MB RAM
 
 #### Théorie
 
-* Basic of containers
-    * Volumes
-    * Port mapping
-    * Images
-    * Registry
-        * dockerhub
-        * local registry
+* Docker images
+  * Images, layers, and containers
+  * Create image interactively
+  * Backup/Restore
+* Dockerhub and local registry
 
 #### Pratique
 
@@ -74,16 +70,17 @@ Azure VMs, 1 vcpu, 500 MB RAM
 
 #### Theorie
 
-* Building custom containers
-    * Dockerfile
-        * WORKDIR
-        * FROM
-        * COPY
-        * RUN
-        * CMD / ENTRYPOINT
-* docker build
-    * local registry
-    * cleanup, docker system prune
+* Building custom images
+  * Dockerfile
+    * FROM
+    * COPY
+    * RUN
+    * CMD / ENTRYPOINT
+* How build cache works
+* Reducing image size
+  * Collapsing layers
+  * Multi-stage builds
+* Push images to dockerhub
 
 #### Pratique
 
@@ -92,11 +89,9 @@ Azure VMs, 1 vcpu, 500 MB RAM
 ### Theorie
 
 * Docker volumes
-  * types of volumes
-  * create a volume
-  * backup volume content
-  * remove volume
-  * restore volume backup
+* Types of volumes
+* Creating a volume
+* Backup/restore content
 
 #### Pratique
 
@@ -104,14 +99,14 @@ Azure VMs, 1 vcpu, 500 MB RAM
 
 #### Theorie
 
-* docker network
-  * types
-  * associate networks to containers
-  * create/remove networks
-  * connect/disconnect networks
-  * name resolution
-  * overlay network
-  * plugins
+* Docker network basics
+  * Types
+  * Associate networks to containers
+* Creating/remove networks
+* Connecting/disconnecting networks
+* Name resolution
+* Overlay network
+* Plugins
 
 #### Pratique
 
@@ -120,12 +115,12 @@ Azure VMs, 1 vcpu, 500 MB RAM
 #### Theorie
 
 * docker-compose
-  * declarative syntax
-  * yaml syntax
-    * environment variables
-    * publish ports
-  * define multiple services/containers
-  * configuration
+* Declarative syntax
+* Syntax for yaml
+* Declaring environment variables
+* Publish ports
+* Define multiple services/containers
+* Configuration
 
 #### Pratique
 
@@ -136,13 +131,13 @@ Azure VMs, 1 vcpu, 500 MB RAM
 ### Theorie
 
 * Docker Swarm
-  * Swarm mode
-  * services
-  * stack
-  * secrets
-  * load balancing
-  * overlay network
-  * troubleshooting
+  * Install a swarm
+  * Manager and worker
+* Services
+* Stacks
+* Overlay network
+* Troubleshooting
+* Secrets
 
 #### Pratique
 
@@ -151,10 +146,10 @@ Azure VMs, 1 vcpu, 500 MB RAM
 ### Demo
 
 * CI/CD with docker
-  * test environment (ryax_runner)
-  * push on dedicated registry
+* Test environment (ryax_runner)
+* Push on dedicated registry
 * Kubernetes
-  * deployment
-  * pods
-  * containers
+* Deployment
+* Pods
+* Containers
 
