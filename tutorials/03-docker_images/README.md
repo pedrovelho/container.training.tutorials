@@ -50,7 +50,7 @@ Install cowsay or any other package on your container. Now commit that change us
 - Create an `ubuntu` container
 - Now add the `cowsay` program by running `apt-get install cowsay`
 - The program should appear in `/usr/games/cowsay`, try it out `/usr/games/cowsay hello`
-- Now commit this changes using `docker commit ubuntu:cowsay`
+- Now commit this changes using `docker commit ctnid ubuntu:cowsay`
 - Check that the new images exists locally with name and tag `ubuntu:cowsay`
 - Run cowsay from a new container image `docker run ubuntu:cowsay /usr/games/cowsay hello mom`
 
