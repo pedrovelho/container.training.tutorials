@@ -11,7 +11,7 @@ Project to hold docker lecture for Sparks, final client is Renault Labs at Sophi
 
 ## VMs
 
-Azure VMs, 1 vcpu, 500 MB RAM
+Azure VMs, 1 vcpu, 1 GB RAM
 
 ## Plan des cours
 
