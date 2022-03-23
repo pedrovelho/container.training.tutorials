@@ -81,7 +81,7 @@ web.run_app(app) # loop until interrupted
 ```
 
 Use `docker cp` or map a volume to copy the file inside the container. You will need to install try 
-`apt-get install python3 curl`. Also install the web application package, `pip install aiohttp`. 
+`apt-get install python3 python3-pip curl`. Also install the web application package, `pip install aiohttp`. 
 Now you should be able to run the script above on the container. To test it try inside the container:
 
 ```shell
